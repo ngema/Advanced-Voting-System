@@ -1,0 +1,47 @@
+*, html, body
+{
+	margin:0;
+	padding:0;
+	
+}
+header
+{
+	background-color:#901B3B;
+	height:60px;
+}
+ul
+{
+	list-style:none;
+	
+}
+ul li
+{
+	display: inline-block;
+}
+header nav
+{
+	float:right;
+}
+.Logo 
+{
+	color: white;
+	font-weight: bold;
+}
+header nav ul li a
+{
+	padding-right:30px;
+	font-weight:bold;
+	color: white;
+	transition: all 0.5s, ease-in;
+}
+header nav ul li a:hover
+{
+	text-decoration:none;
+	color: red ;
+}
+#tab
+{
+	float: right;
+}
+
+

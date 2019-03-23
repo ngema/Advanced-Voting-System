@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/main.js" > </script>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    </head>
+    
+    <body>
+        <header>
+            <div class="container">
+                <div class="row">
+                            <a class="logo"><img src="images/UKZN-logo.jpg "  height="50"></a>
+                           
+                                <nav>
+                                    <ul>
+                                      <li><a href="index.html">Home</a></li>
+                                      <li><a href="register.html">Register</a></li>
+                                      <li><a href="login.html">Login</a></li>
+                                      <li><a href="profile.html">Profile</a></li>
+                                      <li><a href="about.html">About</a></li>
+                                    </ul>
+                               </nav>
+                </div>
+                                           
+            </div>
+        </header>
+
+    <div class="login">
+    <form method="post" action="register.php"> 
+        <h2> Sign Up</h2>
+        <input class="form-control"  type="text" placeholder="Enter Username" name="username"> 
+        <input class="form-control" type="email" placeholder="Enter email" name="email">
+        <input class="form-control" type="password" placeholder="Enter Password" name="password" required>
+        <input class="form-control"  type="password" placeholder="Confirm password" name="cPassword" required>
+        <input type="text" placeholder="Choose Campus" name="campus">
+        <input type="text" placeholder="Enter Phone number" name="phonenumber">
+        <input type="text" placeholder="Enter id" name="idnumber">
+        <label> Gender :</label>
+         <input type="radio" name="gender" value="m" required>Male
+         <input type="radio" name="gender" value="f" required>Female
+        <input  type="submit" class="btn btn-primary" value="Register" name="submit">
+        <!--<button class="btn">Sign In</button> -->
+    </form>
+</div>
+    </body>
+
+
+</html>
