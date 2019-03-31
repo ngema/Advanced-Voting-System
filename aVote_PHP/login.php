@@ -1,6 +1,7 @@
 <?php
 	//echo phpinfo();
     //echo " hi";
+	session_start();
 	if(isset($_POST['submit'])){
 		$host = "localhost";
 		$dbusername = "root";
@@ -12,7 +13,7 @@
 		$con= mysqli_connect($host, $dbusername, $dbpassword, $dbname);
         $name = $con->real_escape_string($_POST['username']);
         $password = $con->real_escape_string($_POST['password']);
-
+		$_SESSION['username']=$name; //capturing a section variable
 
         if (! $con){
             echo "Connected failure";
@@ -29,7 +30,9 @@
 			//echo $data['password'];
 	    if(password_verify($password,$data['password'])){
             echo "success";
-            header('Location:about.html');
+			
+            header('Location:studentprofile.php'); // redirect the user to studentprofile page
+			exit();
         }
 		else{
 			echo "password incorrect";

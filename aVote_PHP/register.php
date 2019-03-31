@@ -18,7 +18,7 @@
         $phonenumber = $con->real_escape_string($_POST['phonenumber']);
         $gender = $con->real_escape_string($_POST['gender']);
         $idnumber = $con->real_escape_string($_POST['idnumber']);
-
+        $image='';
         if (mysqli_connect_errno()){
             echo "error";
         }
